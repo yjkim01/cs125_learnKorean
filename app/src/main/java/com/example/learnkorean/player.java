@@ -5,15 +5,16 @@ import java.util.ArrayList;
 public class player {
 
     private static int currentStage;
-    private static int daysSinceLastPractice;
-    private static ArrayList<item> vocabList;
+    private static ArrayList<vocabitem> vocabList;
 
     public player(int stage, int days) {
         currentStage = stage;
-        daysSinceLastPractice = days;
-        vocabList = new ArrayList<item>();
+        vocabList = new ArrayList<vocabitem>();
     }
-
+    public player() {
+        currentStage = 0;
+        vocabList = new ArrayList<vocabitem>();
+    }
     public int setCurrentStage(int newStage) {
         currentStage = newStage;
         return currentStage;
@@ -21,15 +22,7 @@ public class player {
     public int getCurrentStage() {
         return currentStage;
     }
-    public int setDaysSinceLastPractice(int day) {
-        daysSinceLastPractice = day;
-        return daysSinceLastPractice;
-    }
-    public int getDaysSinceLastPractice() {
-        return daysSinceLastPractice;
-    }
-    public void addVocabItem(item i) {
+    public void addVocabItem(vocabitem i) {
         vocabList.add(i);
     }
-
 }

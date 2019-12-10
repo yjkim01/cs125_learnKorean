@@ -1,5 +1,5 @@
 package com.example.learnkorean;
 
-public class item {
+public class vocabitem {
 
 }
