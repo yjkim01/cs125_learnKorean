@@ -7,7 +7,7 @@ public class player {
     private static int currentStage;
     private static ArrayList<vocabitem> vocabList;
 
-    public player(int stage, int days) {
+    public player(int stage) {
         currentStage = stage;
         vocabList = new ArrayList<vocabitem>();
     }
