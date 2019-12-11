@@ -1,13 +1,12 @@
 package com.example.learnkorean;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 public class vocabitem {
 
-    private static HashMap<String, String> characters = new HashMap<String, String>();
-    private static HashMap<String, String> wordlets = new HashMap<String, String>();
-    private static HashMap<String, String> words = new HashMap<String, String>();
+    public static HashMap<String, String> characters = new HashMap<String, String>();
+    public static HashMap<String, String> wordlets = new HashMap<String, String>();
+    public static HashMap<String, String> words = new HashMap<String, String>();
 
     public vocabitem() {
         characters.put("ㄱ", "gi-euk");
