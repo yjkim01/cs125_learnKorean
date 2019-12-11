@@ -1,5 +1,6 @@
 package com.example.learnkorean;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,6 +21,8 @@ public class PracticeActivity extends AppCompatActivity {
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_practice);
+
+        Intent intent = new Intent(this, PracticeActivity.class);
 
         userlevel = SaveGame.getLevel();
         questionNum = 0;

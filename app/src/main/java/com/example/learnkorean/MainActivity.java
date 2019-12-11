@@ -17,8 +17,7 @@ public class MainActivity extends AppCompatActivity {
         Button login = findViewById(R.id.practiceBegin);
         SaveGame save = new SaveGame(context);
         login.setOnClickListener(unused -> {
-            startActivity(new Intent(MainActivity.this, PracticeActivity.class));
-            finish();
+            startActivity(new Intent(this, PracticeActivity.class));
         });
     }
 }

@@ -8,8 +8,8 @@
         android:layout_width="match_parent"
         android:layout_height="322dp"
         android:gravity="center"
-        android:text="Korean Character"
-        android:textSize="100" />
+        android:text="K"
+        android:textSize="100sp" />
 
     <TextView
         android:id="@+id/instruction"
