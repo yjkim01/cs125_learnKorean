@@ -9,12 +9,24 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class SaveGame {
-    private File gameSave;
+    /** The file where the game's data will be stored. For right now it is just the user's stage. */
+    private static File gameSave;
+
+    /**
+     * Constructor class for SaveGame. Saves the user's current progress.
+     * @param context
+     */
     public SaveGame(final Context context) {
         gameSave = new File(context.getFilesDir(), "savedata.lk");
         setLevel("Beginner");
     }
-    public void setLevel(final String level) {
+
+    /**
+     * Sets the current level the user is  on, or has advanced to. Saves every time
+     * user advances a level.
+     * @param level level user is on
+     */
+    public static void setLevel(final String level) {
         FileWriter fw = null;
         try {
             fw = new FileWriter(gameSave);
@@ -29,7 +41,12 @@ public class SaveGame {
             }
         }
     }
-    public String getLevel() {
+
+    /**
+     * Gets user's current level.
+     * @return user's level
+     */
+    public static String getLevel() {
         try {
             Scanner sc = new Scanner(gameSave);
             return sc.nextLine();

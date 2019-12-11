@@ -9,7 +9,7 @@
         android:layout_height="322dp"
         android:gravity="center"
         android:text="Korean Character"
-        android:textSize="60sp" />
+        android:textSize="100" />
 
     <TextView
         android:id="@+id/instruction"
@@ -39,5 +39,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Click button to check answer." />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:visibility="invisible" />
 
 </LinearLayout>
